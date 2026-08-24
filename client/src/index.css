@@ -1,0 +1,35 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px); --radius-md: calc(var(--radius) - 2px); --radius-lg: var(--radius); --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background); --color-foreground: var(--foreground); --color-card: var(--card); --color-card-foreground: var(--card-foreground); --color-popover: var(--popover); --color-popover-foreground: var(--popover-foreground); --color-primary: var(--primary); --color-primary-foreground: var(--primary-foreground); --color-secondary: var(--secondary); --color-secondary-foreground: var(--secondary-foreground); --color-muted: var(--muted); --color-muted-foreground: var(--muted-foreground); --color-accent: var(--accent); --color-accent-foreground: var(--accent-foreground); --color-destructive: var(--destructive); --color-destructive-foreground: var(--destructive-foreground); --color-border: var(--border); --color-input: var(--input); --color-ring: var(--ring); --color-sidebar: var(--sidebar); --color-sidebar-foreground: var(--sidebar-foreground); --color-sidebar-primary: var(--sidebar-primary); --color-sidebar-primary-foreground: var(--sidebar-primary-foreground); --color-sidebar-accent: var(--sidebar-accent); --color-sidebar-accent-foreground: var(--sidebar-accent-foreground); --color-sidebar-border: var(--sidebar-border); --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root { --radius: .5rem; --background: oklch(0.975 0.003 255); --foreground: oklch(0.29 0.015 255); --card: oklch(1 0 0); --card-foreground: oklch(0.29 0.015 255); --popover: oklch(1 0 0); --popover-foreground: oklch(0.29 0.015 255); --primary: oklch(0.53 0.16 253); --primary-foreground: oklch(0.99 0.003 255); --secondary: oklch(0.96 0.006 255); --secondary-foreground: oklch(0.37 0.015 255); --muted: oklch(0.96 0.006 255); --muted-foreground: oklch(0.55 0.016 255); --accent: oklch(0.95 0.025 252); --accent-foreground: oklch(0.45 0.13 253); --destructive: oklch(0.577 0.245 27.325); --destructive-foreground: oklch(0.985 0 0); --border: oklch(0.9 0.006 255); --input: oklch(0.88 0.008 255); --ring: oklch(0.53 0.16 253); --sidebar: oklch(1 0 0); --sidebar-foreground: oklch(0.29 0.015 255); --sidebar-primary: oklch(0.53 0.16 253); --sidebar-primary-foreground: oklch(0.99 0.003 255); --sidebar-accent: oklch(0.95 0.025 252); --sidebar-accent-foreground: oklch(0.45 0.13 253); --sidebar-border: oklch(0.9 0.006 255); --sidebar-ring: oklch(0.53 0.16 253); }
+.dark { --background: oklch(0.19 0.014 255); --foreground: oklch(0.95 0.006 255); --card: oklch(0.23 0.016 255); --card-foreground: oklch(0.95 0.006 255); --popover: oklch(0.23 0.016 255); --popover-foreground: oklch(0.95 0.006 255); --secondary: oklch(0.28 0.016 255); --secondary-foreground: oklch(0.9 0.006 255); --muted: oklch(0.29 0.016 255); --muted-foreground: oklch(0.72 0.016 255); --accent: oklch(0.31 0.045 253); --accent-foreground: oklch(0.95 0.006 255); --border: oklch(1 0 0 / 12%); --input: oklch(1 0 0 / 14%); --sidebar: oklch(0.2 0.015 255); --sidebar-foreground: oklch(0.95 0.006 255); --sidebar-accent: oklch(0.31 0.045 253); --sidebar-accent-foreground: oklch(0.95 0.006 255); }
+
+@layer base {
+  * { @apply border-border outline-ring/50; }
+  body { @apply bg-background text-foreground; font-family: Inter, ui-sans-serif, system-ui, sans-serif; }
+  button:not(:disabled), [role="button"]:not([aria-disabled="true"]), [type="button"]:not(:disabled), [type="submit"]:not(:disabled), [type="reset"]:not(:disabled), a[href], select:not(:disabled), input[type="checkbox"]:not(:disabled), input[type="radio"]:not(:disabled) { @apply cursor-pointer; }
+}
+
+@layer components {
+  .container { width: 100%; margin-left: auto; margin-right: auto; padding-left: 1rem; padding-right: 1rem; }
+  .flex { min-height: 0; min-width: 0; }
+  .font-serif { font-family: Inter, ui-sans-serif, system-ui, sans-serif; }
+  .app-workspace { background: #f7f8fb; }
+  .app-workspace .rounded-2xl { border-radius: .5rem !important; }
+  .app-workspace .rounded-xl { border-radius: .375rem !important; }
+  .app-workspace [class*="shadow-"] { box-shadow: 0 1px 2px rgba(15, 23, 42, .04) !important; }
+  .app-workspace .bg-emerald-800 { background-color: #206bc4 !important; }
+  .app-workspace .hover\:bg-emerald-900:hover { background-color: #1a5aa6 !important; }
+  .app-workspace .text-emerald-700 { color: #206bc4 !important; }
+  .app-workspace .border-emerald-200 { border-color: #bfdbfe !important; }
+  .app-workspace .bg-emerald-50 { background-color: #eff6ff !important; }
+  @media (min-width: 640px) { .container { padding-left: 1.5rem; padding-right: 1.5rem; } }
+  @media (min-width: 1024px) { .container { padding-left: 2rem; padding-right: 2rem; max-width: 1280px; } }
+}

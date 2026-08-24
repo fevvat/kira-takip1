@@ -1,0 +1,34 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1787590331561,
+      "tag": "0000_nasty_captain_britain",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1787590596022,
+      "tag": "0001_last_yellow_claw",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1787593716865,
+      "tag": "0002_talented_richard_fisk",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1787594376386,
+      "tag": "0003_fat_nextwave",
+      "breakpoints": true
+    }
+  ]
+}

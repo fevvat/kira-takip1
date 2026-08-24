@@ -1,0 +1,46 @@
+# Project TODO
+
+- [x] OAuth ile kullanıcı girişini ve korumalı yönetim paneli erişimini yapılandır.
+- [x] Portföy özeti, yaklaşan işlemler ve finansal göstergeler içeren ana gösterge ekranını oluştur.
+- [x] Site, bina ve bağımsız bölüm kayıtları için veri modelini ve listeleme/ekleme/düzenleme akışlarını geliştir.
+- [x] Kiracı profilleri ile kiracı–daire eşleştirme süreçlerini geliştir.
+- [x] Başlangıç/bitiş tarihi, kira bedeli, artış dönemi ve depozito alanlarını içeren sözleşme yönetimini geliştir.
+- [x] Aylık tahakkuk ile ödenen, geciken ve bekleyen tahsilat durumlarını yöneten kayıtları geliştir.
+- [x] Gelir, gider ve demirbaş kayıtları ile temel finansal takip ekranlarını geliştir.
+- [x] Sözleşme ve belge meta verilerini yöneten arşiv ekranını geliştir.
+- [x] Yaklaşan sözleşme bitişleri ile geciken/vadesi yaklaşan ödemeleri gösteren hatırlatma listesi oluştur.
+- [x] Dışa aktarılabilir özet raporlar ve veri yedekleme kayıt görünümünü geliştir.
+- [x] Zarif, erişilebilir ve masaüstü/mobil uyumlu yönetim paneli stilini uygula.
+- [x] Veritabanı işlemlerini ve iş kurallarını Vitest ile kapsa; derleme, test ve görsel doğrulama yap.
+- [x] KiraTakip’e özgü premium görsel kimliği; marka işareti, tutarlı derin yeşil vurgular ve gayrimenkul/finans yüzey detaylarıyla güçlendir.
+- [x] Stil iyileştirmesinden sonra masaüstü ve mobil ekran görüntüleriyle son görsel kalite kontrolünü gerçekleştir.
+- [x] Açık kaynak dashboard, finans ve gayrimenkul ürünlerindeki bilgi mimarisi, tablo yoğunluğu ve etkileşim kalıplarını kaynaklarıyla incele.
+- [x] KiraTakip ön yüzünü, dekoratif yapay zekâ estetiği yerine iş odaklı uygulama kabuğu, araç çubukları, veri tabloları ve yoğunluk prensipleriyle yeniden düzenle.
+- [x] Yenilenen arayüzde masaüstü ve mobil görsel/işlevsel kalite kontrolü yap; tip denetimi ve testleri tekrar çalıştır.
+- [x] Kira takip senaryosunu temsil eden tutarlı statik site, bina, daire, kiracı, sözleşme ve tahakkuk örnek verileri oluştur.
+- [x] Görseldeki kira tahsilatları, gelirler, giderler, gelir-gider özeti, boş/dolu daireler, yaklaşan sözleşmeler ve demirbaş alanlarını örnek verilerle doldur.
+- [x] Gerçek kullanıcı verisi olmadığında statik örnek verilerin görünmesini; kullanıcı kaydı bulunduğunda gerçek verilerin öncelik almasını sağla.
+- [x] Dolu ekranların masaüstü/mobil görünümünü, tip denetimini ve testleri doğrula.
+- [x] Örnek veri modunda düzenle, sil ve örnek kaydı değiştiren diğer eylemleri devre dışı bırak.
+- [x] Örnek veri modunun hata üretmeyen salt okunur davranışını test ederek doğrula.
+- [x] Örnek satır aksiyonlarının salt okunur bağlamda mutasyon tetiklemediğini doğrulayan Vitest bileşen testi ekle.
+- [x] Örnek kayıt satırlarının düzenle/sil yerine yalnızca salt okunur durum gösterdiğine dair son kalite kontrolü yap.
+- [x] Örnek kayıt aksiyonları için bileşen testi ekle; salt okunur modda düzenle/sil denetimlerinin render edilmediğini doğrula.
+- [x] Örnek kayıt bileşeni testinden sonra salt okunur aksiyon iş kalemlerini yeniden doğrula.
+- [x] Gerçek kayıt bulunan modülleri değiştirmeden, yalnızca boş modüller için statik örnek veri geri dönüşünü uygula.
+- [x] Gerçek ve örnek kayıtların birlikte görünmesinde örnek satırların salt okunur kaldığını test et.
+- [x] Bağımsız bölüm için blok, tip, kat, net/brüt alan, oda sayısı, kira hedefi, aidat, sayaçlar, durum ve notları içeren detaylı kayıt formu oluştur.
+- [x] Geciken tahsilatları ana ekranda tutar, kiracı ve vade bilgisiyle görünür bir uyarı listesinde göster.
+- [x] Kullanıcının geciken tahsilatları için platform destekli günlük otomatik hatırlatma kuralını ve güvenli zamanlanmış iş akışını ekle.
+- [x] Form doğrulamasını, gecikme vurgusunu ve zamanlanmış hatırlatma kurallarını Vitest ve görsel kontrolle doğrula.
+- [x] Otomatik gecikme hatırlatmalarını proje sahibi yerine ilgili oturum kullanıcısına ulaştıran bildirim akışını uygula ve doğrula.
+- [x] Günlük hatırlatma kuralının başlat/duraklat akışı ile zamanlanmış callback kimlik doğrulama ve bildirim davranışını Vitest ile kapsa.
+- [x] Geciken kira hatırlatmalarını ilgili kullanıcıya ait uygulama içi bildirim kaydı olarak kalıcılaştır ve Hatırlatmalar ekranında göster.
+- [x] Günlük hatırlatma başlat/duraklat yordamlarını; yetkisiz kullanıcı reddini ve zamanlanmış callback'in cron/task kimlik kontrolünü doğrudan Vitest ile kapsa.
+- [x] Hatırlatma başlat/duraklat yordamını yetki, yeni görev, mevcut görev ve duraklatma senaryolarıyla doğrudan test et.
+- [x] Zamanlanmış geciken kira callback’ini cron kimliği, görev uyuşmazlığı, duraklatılmış kural ve başarılı kullanıcı bildirimi senaryolarıyla doğrudan test et.
+- [x] Yayındaki sürümün dağıtıma hazır kaynak dosyalarını ZIP arşivi olarak oluştur ve arşiv içeriğini denetle.
+- [x] ZIP arşivinde gerekli kaynak/şema/yapılandırma dosyalarının bulunduğunu; bağımlılık, derleme çıktısı ve günlüklerin hariç tutulduğunu listeyle doğrula.
+- [x] Doğrulanmış ZIP arşivini kullanıcıya dosya eki olarak teslim et.
+- [x] Harici yayına alma için kurulum, veritabanı göçü, gerekli ortam değişkenleri ve çalıştırma komutlarını içeren README ekle.
+- [x] Vercel için sunucu işlevi, ortam değişkenleri, OAuth geri dönüş adresi ve günlük hatırlatma cron gereksinimlerini belgeleyip uyumluluğu hazırla.
